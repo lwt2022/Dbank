@@ -5,6 +5,9 @@ actor Dbank {
   currentValue := 100;
 
  // Debug.print("Hello");
- Debug.print(debug_show(currentValue));
+ //Debug.print(debug_show(currentValue));
+ let id = 24894305897654;
+
+ Debug.print(debug_show(id));
 
 };
