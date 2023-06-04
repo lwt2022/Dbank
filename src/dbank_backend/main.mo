@@ -1,4 +1,5 @@
 import Debug "mo:base/Debug";
+import Nat "mo:base/Nat";
 
 actor Dbank {
   var currentValue = 300;
@@ -6,8 +7,12 @@ actor Dbank {
 
  // Debug.print("Hello");
  //Debug.print(debug_show(currentValue));
- let id = 24894305897654;
+  let id = 24894305897654;
 
- Debug.print(debug_show(id));
+ //Debug.print(debug_show(id));
 
+  public func topUp(amount : Nat) {
+    currentValue += amount;
+    Debug.print(debug_show(currentValue));
+  };
 };
